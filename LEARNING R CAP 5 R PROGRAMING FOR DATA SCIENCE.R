@@ -43,4 +43,48 @@ x <- vector('numeric', length = 10)
 x
 
 ######5.7 Mixing Objects########
+y <- c(1.7, 'Ricardo') ##character
+y
+class(y)
+
+y <- c(TRUE, 2) ##Numeric
+y
+class(y)
+
+y <- c('Ricardo', TRUE) ## character
+y
+class(y)
+
+#######5.8 Explicit Coercion#######
+
+x <- 0:6
+class(x)
+as.numeric(x)
+as.logical(x)
+
+b <- 0:100
+class(b)
+as.numeric(b)
+as.logical(b)
+as.character(b)
+
+x <- c('a', 'b', 'c')
+as.numeric(x)
+as.logical(x)
+as.complex(x)
+
+#######5.9 Matrices#######
+
+
+
+
+
+
+
+
+
+
+
+
+
 
