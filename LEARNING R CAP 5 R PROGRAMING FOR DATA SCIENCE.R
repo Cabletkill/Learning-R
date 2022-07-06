@@ -75,16 +75,44 @@ as.complex(x)
 
 #######5.9 Matrices#######
 
+m <- matrix(nrow = 2, ncol = 3)
+m
+dim(m)
+attributes(m)
 
+m <- matrix(1:8, nrow = 2, ncol = 4)
+m
 
+m <- 1:10
+dim(m) <- c(2,5)
+m
 
+x <- 1:10
+y <- 5:15
+cbind(x,y)
+cbind(y, x)
 
+rbind(x,y)
 
+###########5.10 Lists#########
 
+x <- list(1,'a', TRUE, 1+4)
+x
 
+x <- vector('list', length = 5)
+x
 
+#######5.11 Factors###########
 
+x <- factor(c('yes', 'yes','no','yes','no'))
+x
+table(x)
+## See the underlying representation of factor
+unclass(x)
 
+x <- factor(c('yes', 'yes', 'no', 'yes', 'no'))
+x ## Levels are put in alphabetical order
 
-
-
+x <- factor(c('yes', 'yes', 'no', 'yes', 'no')) 
+levels = c('yes','no')
+x
